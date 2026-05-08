@@ -18,5 +18,5 @@ Uma boa arquitetura é guiada pelos chamados **Atributos de Qualidade** (ou _Non
 ## Padrões de arquitetura
 
 ### MVVM
-O **[[MVVM]] (Model-View-ViewModel)** é o padrão de arquitetura recomendado pelo Google para o desenvolvimento Android. Ele foi projetado para separar as preocupações da interface do usuário (UI) da lógica de negócios, facilitando o teste, a manutenção e a escalabilidade do código.
+O **[[MVVM]] (Model-View-ViewModel)** é o padrão de arquitetura recomendado pelo Google para o desenvolvimento Android. Ele foi projetado para separar as preocupações da interface do usuário (UI) da lógica de negócios, facilitando o teste, a manutenção e a escalabilidade do código. Ele é baseado no [[Paradigma Reativo]]
 

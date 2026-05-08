@@ -3,6 +3,7 @@ package com.rafaelleal.kotlinandroidfundamentals.architectures.views
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -20,18 +21,38 @@ class MVVMActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Configura o View Binding
         binding = ActivityMvvmactivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Observa as mudanças de dados na ViewModel
-        viewModel.text.observe(this) { novoTexto ->
-            binding.textViewStatus.text = novoTexto
+        viewModel.text.observe(this) { newText ->
+            binding.textViewStatus.text = newText
         }
 
-        // Exemplo de interação: Atualizando a ViewModel ao clicar em um botão
+        viewModel.showLoading.observe(this) { isLoading ->
+            binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
+            binding.linearLayout.visibility = if (isLoading) View.GONE else View.VISIBLE
+        }
+
+        viewModel.showErrorMessage.observe(this) { showError ->
+            binding.linearLayoutError.visibility = if (showError) View.VISIBLE else View.GONE
+            binding.buttonShowError.visibility = if (showError) View.GONE else View.VISIBLE
+        }
+
         binding.buttonUpdate.setOnClickListener {
-            viewModel.updateText("Texto atualizado via ViewModel!")
+            viewModel.updateText("Text was updated by the ViewModel!")
+        }
+
+        binding.buttonShowLoading.setOnClickListener {
+            viewModel.showLoading()
+        }
+
+        binding.buttonShowError.setOnClickListener {
+            viewModel.showErrorMessage()
+        }
+
+        binding.buttonTryAgain.setOnClickListener {
+            viewModel.tryAgain()
+            binding.textViewStatus.text = "Waiting..."
         }
     }
 

@@ -8,6 +8,7 @@
     tools:context=".architectures.views.MVVMActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -18,7 +19,7 @@
             android:id="@+id/textViewStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Aguardando..."
+            android:text="Waiting..."
             android:textSize="18sp" />
 
         <Button
@@ -26,8 +27,62 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Atualizar Dados" />
+            android:text="Update data" />
+
+        <Button
+            android:id="@+id/buttonShowLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Show loading state" />
+
+
+        <Button
+            android:id="@+id/buttonShowError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ShowError"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/design_default_color_error"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:paddingVertical="20dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/yellow"
+            >
+
+            <TextView
+                android:id="@+id/textViewError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Something went wrong"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonTryAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Try again"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/design_default_color_error"/>
+
+        </LinearLayout>
 
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="100dp"
+        android:visibility="gone"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

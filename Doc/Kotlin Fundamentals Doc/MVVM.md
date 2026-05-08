@@ -56,3 +56,20 @@ Para implementar o MVVM de forma eficaz, o Google fornece o **Android Jetpack**,
 - **LiveData/Flow:** Para a comunicação reativa.
     
 - **View Binding / Data Binding:** Para conectar os componentes do layout diretamente aos dados.
+
+##  Desvantagens
+
+- **Curva de Aprendizado:** Exige domínio sobre corrotinas, fluxos (Flow) e observáveis.
+    
+- **Boilerplate:** Para apps muito simples, pode parecer excesso de arquivos e classes.
+    
+- **Complexidade no Data Binding:** Se usado incorretamente, pode dificultar o rastreio de bugs.
+    
+
+## Principais Problemas Enfrentados
+
+- **ViewModels Gigantes (God ViewModel):** Tendência de colocar toda a lógica no ViewModel, tornando-o difícil de manter.
+    
+- **Vazamento de Contexto:** Tentar passar o `Context` da Activity para o ViewModel (Prática proibida).
+    
+- **Estado de UI complexo:** Dificuldade em gerenciar múltiplos estados simultâneos (carregamento, erro, sucesso).

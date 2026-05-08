@@ -13,28 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MVVM.md",
+                "file": "Arquitetura de Software.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MVVM"
-            }
-          }
-        ]
-      },
-      {
-        "id": "89530b6a4f14d7e9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "b1ca543333269355",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Visualização em gráfico"
+              "title": "Arquitetura de Software"
             }
           }
         ]
@@ -201,6 +185,7 @@
   },
   "active": "1a61ee098c4833a2",
   "lastOpenFiles": [
+    "Paradigma Reativo.md",
     "Arquitetura de Software.md",
     "MVVM.md",
     "crie um link.md"
