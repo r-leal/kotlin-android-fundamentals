@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arquitetura de Software.md",
+                "file": "MVVM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Arquitetura de Software"
+              "title": "MVVM"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e691db328802178d",
@@ -185,9 +186,9 @@
   },
   "active": "1a61ee098c4833a2",
   "lastOpenFiles": [
-    "Paradigma Reativo.md",
     "Arquitetura de Software.md",
     "MVVM.md",
+    "Paradigma Reativo.md",
     "crie um link.md"
   ]
 }
