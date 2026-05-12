@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "e691db328802178d",
@@ -186,7 +185,9 @@
   },
   "active": "1a61ee098c4833a2",
   "lastOpenFiles": [
+    "Paradigma Declarativo.md",
     "Paradigma Reativo.md",
+    "MVI.md",
     "Arquitetura de Software.md",
     "MVVM.md",
     "crie um link.md"
