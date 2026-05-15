@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Kotlin Android Fundamentals</string>
+    <string name="title_activity_mviactivity">MVIActivity</string>
 </resources>

@@ -17,6 +17,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat.startActivity
+import com.rafaelleal.kotlinandroidfundamentals.architectures.views.MVIActivity
 import com.rafaelleal.kotlinandroidfundamentals.architectures.views.MVVMActivity
 import com.rafaelleal.kotlinandroidfundamentals.ui.theme.KotlinAndroidFundamentalsTheme
 
@@ -39,6 +40,7 @@ fun NavigationList(modifier: Modifier = Modifier) {
     LazyColumn(modifier = modifier.fillMaxSize()) {
         item {
             MVVMNavigateButon()
+            MVINavigateButon()
         }
     }
 }
@@ -54,5 +56,18 @@ fun MVVMNavigateButon() {
         }
     ) {
         Text(text = "Ir para MVVM")
+    }
+}
+@Composable
+fun MVINavigateButon() {
+    val context = LocalContext.current
+    Button(
+        modifier = Modifier.padding(16.dp),
+        onClick = {
+            val intent = Intent(context, MVIActivity::class.java)
+            context.startActivity(intent)
+        }
+    ) {
+        Text(text = "Ir para MVI")
     }
 }
