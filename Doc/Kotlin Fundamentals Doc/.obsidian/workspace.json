@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arquitetura de Software.md",
-                "mode": "source",
+                "file": "Kotlin/Data Class.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Arquitetura de Software"
+              "title": "Data Class"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "e691db328802178d",
@@ -185,11 +185,20 @@
   },
   "active": "1a61ee098c4833a2",
   "lastOpenFiles": [
-    "Paradigma Declarativo.md",
-    "Paradigma Reativo.md",
-    "MVI.md",
-    "Arquitetura de Software.md",
-    "MVVM.md",
+    "Arquitetura/Arquitetura de Software.md",
+    "Kotlin/Data Class.md",
+    "Kotlin/images/DataClass.png",
+    "Kotlin/images/Não confirmado 348214.crdownload",
+    "Kotlin/images",
+    "Kotlin/Nova pasta",
+    "images",
+    "Nova pasta",
+    "Arquitetura/Paradigma Reativo.md",
+    "Arquitetura/Paradigma Declarativo.md",
+    "Arquitetura/MVVM.md",
+    "Arquitetura/MVI.md",
+    "Arquitetura",
+    "Kotlin",
     "crie um link.md"
   ]
 }
