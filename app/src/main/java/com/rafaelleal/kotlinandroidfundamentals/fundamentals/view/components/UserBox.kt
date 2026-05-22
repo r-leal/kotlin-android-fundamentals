@@ -19,10 +19,22 @@ import com.rafaelleal.kotlinandroidfundamentals.fundamentals.view.models.UserTyp
 
 @Composable
 fun UserBox(modifier: Modifier = Modifier) {
+
+    val list = dataUser3.userTypes
+    list.add(UserType.ADMIN)
+
+    val (dataUserName, dataUserAge, dataUserUserTypes) = dataUser1
+
+    val name = dataUser1.name
+    val age = dataUser1.age
+    val userTypes = dataUser1.userTypes
+
     Box(modifier = modifier) {
 
         Column(
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 8.dp),
             horizontalAlignment = Alignment.Start,
             verticalArrangement = Arrangement.Top
         ) {
@@ -39,6 +51,7 @@ fun UserBox(modifier: Modifier = Modifier) {
 
             TextWithBottomPadding(text = "simpleUser1 == simpleUser2: ${simpleUser1 == simpleUser2}")
 
+
             HorizontalDivider()
 
             TextWithBottomPadding(text = "DataUser 1: $dataUser1")
@@ -46,13 +59,16 @@ fun UserBox(modifier: Modifier = Modifier) {
             TextWithBottomPadding(text = "DataUser 2: $dataUser2")
 
             TextWithBottomPadding(text = "dataUser1 == dataUser2: ${dataUser1 == dataUser2}")
+
+            TextWithBottomPadding(text = "dataUser3: ${dataUser3}")
+
         }
     }
 }
 
 @Composable
 fun TextWithBottomPadding(
-    text: String,modifier: Modifier = Modifier
+    text: String, modifier: Modifier = Modifier
 ) {
     Text(
         modifier = modifier.padding(bottom = 14.dp),
@@ -67,10 +83,10 @@ private fun UserBoxPreview() {
     UserBox()
 }
 
-
 val simpleUser1 = SimpleUser("John", 30, listOf(UserType.COMMON))
 val simpleUser2 = SimpleUser("John", 30, listOf(UserType.COMMON))
 
-val dataUser1 = DataUser("John", 30, listOf(UserType.COMMON))
-val dataUser2 = DataUser("John", 30, listOf(UserType.COMMON))
+val dataUser1 = DataUser("John", 30, mutableListOf(UserType.COMMON))
+val dataUser2 = DataUser("John", 30, mutableListOf(UserType.COMMON))
 
+val dataUser3 = dataUser1.copy(userTypes = dataUser1.userTypes.map { it }.toMutableList())
