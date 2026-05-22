@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat.startActivity
 import com.rafaelleal.kotlinandroidfundamentals.architectures.views.MVIActivity
 import com.rafaelleal.kotlinandroidfundamentals.architectures.views.MVVMActivity
+import com.rafaelleal.kotlinandroidfundamentals.fundamentals.view.DataClassActivity
 import com.rafaelleal.kotlinandroidfundamentals.ui.theme.KotlinAndroidFundamentalsTheme
 
 class MainActivity : ComponentActivity() {
@@ -41,6 +42,7 @@ fun NavigationList(modifier: Modifier = Modifier) {
         item {
             MVVMNavigateButon()
             MVINavigateButon()
+            DataClassNavigateButon()
         }
     }
 }
@@ -71,3 +73,20 @@ fun MVINavigateButon() {
         Text(text = "Ir para MVI")
     }
 }
+
+@Composable
+fun DataClassNavigateButon() {
+    val context = LocalContext.current
+    Button(
+        modifier = Modifier.padding(16.dp),
+        onClick = {
+            val intent = Intent(context, DataClassActivity::class.java)
+            context.startActivity(intent)
+        }
+    ) {
+        Text(text = "Ir para Data Class")
+    }
+}
+
+
+
