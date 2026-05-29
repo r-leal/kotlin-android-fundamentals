@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fundamentos Kotlin.md",
+                "file": "Kotlin/corrotinas/Corrotinas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fundamentos Kotlin"
+              "title": "Corrotinas"
             }
           }
         ],
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285.5026054382324
+    "width": 285.5026054382324,
+    "collapsed": true
   },
   "right": {
     "id": "e691db328802178d",
@@ -200,8 +201,8 @@
   },
   "active": "ac7a16fdf52e781a",
   "lastOpenFiles": [
-    "Kotlin/Data Class.md",
     "Fundamentos Kotlin.md",
+    "Kotlin/Data Class.md",
     "Kotlin/corrotinas/Corrotinas.md",
     "Arquitetura/Arquitetura de Software.md",
     "Kotlin/corrotinas/Fluxos de dados.md",
