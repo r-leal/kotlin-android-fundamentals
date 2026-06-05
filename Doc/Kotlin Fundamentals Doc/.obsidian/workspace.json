@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1a61ee098c4833a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kotlin/Data Class.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Data Class"
-            }
-          },
-          {
             "id": "ac7a16fdf52e781a",
             "type": "leaf",
             "state": {
@@ -33,6 +19,20 @@
               },
               "icon": "lucide-file",
               "title": "Corrotinas"
+            }
+          },
+          {
+            "id": "58e4281b30e33b0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kotlin/corrotinas/Operadores do FLow.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Operadores do FLow"
             }
           }
         ],
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285.5026054382324,
-    "collapsed": true
+    "width": 285.5026054382324
   },
   "right": {
     "id": "e691db328802178d",
@@ -199,16 +198,17 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "ac7a16fdf52e781a",
+  "active": "1d943c5b448e9986",
   "lastOpenFiles": [
+    "Kotlin/corrotinas/Operadores do FLow.md",
+    "Kotlin/corrotinas/Corrotinas.md",
+    "Kotlin/corrotinas/Fluxos de dados.md",
+    "Kotlin/corrotinas/A Máquina de Estados das Corrotinas Kotlin.md",
+    "Kotlin/corrotinas/Job.md",
     "Fundamentos Kotlin.md",
     "Kotlin/Data Class.md",
-    "Kotlin/corrotinas/Corrotinas.md",
     "Arquitetura/Arquitetura de Software.md",
-    "Kotlin/corrotinas/Fluxos de dados.md",
-    "Kotlin/corrotinas/Job.md",
     "Kotlin/corrotinas/SupervisorJob.md",
-    "Kotlin/corrotinas/A Máquina de Estados das Corrotinas Kotlin.md",
     "Kotlin/corrotinas",
     "Kotlin/images/DataClass.png",
     "Kotlin/images/Não confirmado 348214.crdownload",

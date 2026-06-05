@@ -66,9 +66,20 @@ scope.launch {
 }
 ```
 
+```kotlin
+scope.launch {
+    val deferred1 = async { fetchData(1) }
+    val deferred2 = async { fetchData(2) }
+    
+    val list = listOf(deferred1, deferred2)
+    // Ambas as tarefas rodam simultaneamente
+    val combinedResult = list.map{it.await()}
+}
+```
+
 Em resumo, as corrotinas simplificam drasticamente a complexidade de gerenciar múltiplas threads manualmente, oferecendo uma API robusta e integrada à linguagem Kotlin.
 
 ### 5. Fluxo de dados 
 
-As tecnologias para gerenciamento de [[Fluxos de dados]] no Android evoluíram de soluções específicas da plataforma, como o LiveData, para implementações baseadas em Coroutines do Kotlin, como Flow, StateFlow e SharedFlow.
+As tecnologias para gerenciamento de [[Fluxos de dados]] no Android evoluíram de soluções específicas da plataforma, como o LiveData, para implementações baseadas em Coroutines do Kotlin, como Flow, StateFlow e SharedFlow. Os [[Operadores do FLow]] tem várias utilidades e simplificam o conumo e tratamento de dados 
 

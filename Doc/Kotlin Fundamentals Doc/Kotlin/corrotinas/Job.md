@@ -68,7 +68,7 @@ Embora tecnicamente uma função de extensão, ela é vital para a cooperação 
 ```kotlin
 scope.launch {
     for (i in 1..1000) {
-        ensureActive() // Verifica cancelamento em cada iteração [12]
+        ensureActive() // Verifica cancelamento em cada iteração
         processData(i)
     }
 }

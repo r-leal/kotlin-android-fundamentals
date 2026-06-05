@@ -20,6 +20,7 @@ import androidx.core.content.ContextCompat.startActivity
 import com.rafaelleal.kotlinandroidfundamentals.architectures.views.MVIActivity
 import com.rafaelleal.kotlinandroidfundamentals.architectures.views.MVVMActivity
 import com.rafaelleal.kotlinandroidfundamentals.fundamentals.view.DataClassActivity
+import com.rafaelleal.kotlinandroidfundamentals.fundamentals.view.FlowCollectActivity
 import com.rafaelleal.kotlinandroidfundamentals.ui.theme.KotlinAndroidFundamentalsTheme
 
 class MainActivity : ComponentActivity() {
@@ -43,6 +44,7 @@ fun NavigationList(modifier: Modifier = Modifier) {
             MVVMNavigateButon()
             MVINavigateButon()
             DataClassNavigateButon()
+            CollectFlowNavigateButon()
         }
     }
 }
@@ -85,6 +87,19 @@ fun DataClassNavigateButon() {
         }
     ) {
         Text(text = "Ir para Data Class")
+    }
+}
+@Composable
+fun CollectFlowNavigateButon() {
+    val context = LocalContext.current
+    Button(
+        modifier = Modifier.padding(16.dp),
+        onClick = {
+            val intent = Intent(context, FlowCollectActivity::class.java)
+            context.startActivity(intent)
+        }
+    ) {
+        Text(text = "Ir para Flow Collect Screen")
     }
 }
 

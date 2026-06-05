@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinAndroidFundamentals">
         <activity
+            android:name=".fundamentals.view.FlowCollectActivity"
+            android:exported="false"
+            android:label="@string/title_activity_flow_collect"
+            android:theme="@style/Theme.KotlinAndroidFundamentals" />
+        <activity
             android:name=".fundamentals.view.DataClassActivity"
             android:exported="false"
             android:label="@string/title_activity_data_class"
