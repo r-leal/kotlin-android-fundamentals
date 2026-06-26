@@ -169,25 +169,6 @@ A variância controla como os tipos genéricos podem ser substituídos por seus 
 sealed interface Arvore<out T> 
 ```
 
-```kotlin
-class Laranjeira : Arvore<Laranja> { 
-	
-}
-```
-
-```kotlin
-// O 'out' diz que a Árvore só entrega itens, não recebe
-sealed interface Coletor<in T> {
-	fun coleta(fruta: T)
-}
-```
-
-
-```kotlin
-class ColetorDeLaranja: Coletor<Laranja>{
-	override fun coleta(fruta: Laranja)
-}
-```
 ---
 
 ## 7. O que é o Reified?
@@ -215,15 +196,6 @@ inline fun <reified T> checarSeEhTipo(objeto: Any) {
 }
 
 fun main() {
-	val checagem = inline fun <reified String> checarSeEhTipo(objeto: Any) {
-    if (objeto is String) {
-        println("Sim, o objeto é do tipo esperado!")
-    } else {
-        println("Não, é outro tipo.")
-    }
-    val checagem("olá")
-}
-
     checarSeEhTipo<String>("Olá") // Vai imprimir que sim
     checarSeEhTipo<Int>("Olá")    // Vai imprimir que não
 }

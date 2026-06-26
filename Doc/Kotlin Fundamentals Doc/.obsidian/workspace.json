@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kotlin/Tipos de funções.md",
+                "file": "Kotlin/Funções de Escopo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tipos de funções"
+              "title": "Funções de Escopo"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "58e4281b30e33b0e",
   "lastOpenFiles": [
-    "Fundamentos Kotlin.md",
     "Kotlin/Tipos de funções.md",
+    "Fundamentos Kotlin.md",
     "Kotlin/Funções de Escopo.md",
     "Kotlin/corrotinas/SupervisorJob.md",
     "Kotlin/corrotinas/Operadores do Flow.md",
