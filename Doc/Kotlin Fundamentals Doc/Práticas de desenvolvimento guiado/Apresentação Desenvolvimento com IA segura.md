@@ -25,6 +25,4 @@ Claramente nosso objetivo é resolver uma dor do cliente e o que tem nos impedid
 
 ![[Conclusão dos processos]]
 
-
-
-![[Desenvolvimento_Seguro_com_IA.png]]
+![[Desenvolvimento_Blindado__Qualidade_e_IA.png]]

@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arquitetura/DesignPatterns/Design Patterns.md",
+                "file": "Práticas de desenvolvimento guiado/Apresentação Desenvolvimento com IA segura.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Design Patterns"
+              "title": "Apresentação Desenvolvimento com IA segura"
             }
           }
         ],
@@ -270,13 +270,16 @@
   },
   "active": "303417341ac9aa27",
   "lastOpenFiles": [
+    "Arquitetura/DesignPatterns/Design Patterns.md",
+    "Práticas de desenvolvimento guiado/Apresentações/The_Dynamic_AI_Blueprint.pptx",
+    "Práticas de desenvolvimento guiado/Apresentações/The_Dynamic_AI_Blueprint.pdf",
+    "Práticas de desenvolvimento guiado/imagens/Desenvolvimento_Blindado__Qualidade_e_IA.png",
     "Arquitetura/DesignPatterns/Prototype.md",
     "Arquitetura/DesignPatterns/Builder.md",
     "Práticas de desenvolvimento guiado/imagens/Desenvolvimento_de_Software_com_IA_2.png",
     "Práticas de desenvolvimento guiado/Apresentações/Precision_AI_Engineering.pptx",
     "Práticas de desenvolvimento guiado/Apresentações/Precision_AI_Engineering.pdf",
     "Fundamentos Kotlin.md",
-    "Arquitetura/DesignPatterns/Design Patterns.md",
     "Arquitetura/System Design/System Design.md",
     "Práticas de desenvolvimento guiado/Conclusão dos processos.md",
     "Práticas de desenvolvimento guiado/Apresentações/The_Armored_Assembly_Line.pptx",
@@ -296,7 +299,6 @@
     "Arquitetura/DesignPatterns/Factory Method.md",
     "Arquitetura/DesignPatterns",
     "Kotlin/Funções de Escopo.md",
-    "Arquitetura/System Design",
     "Kotlin/Tipos de funções.md",
     "Kotlin/corrotinas/SupervisorJob.md",
     "Kotlin/corrotinas/Operadores do Flow.md",
@@ -305,7 +307,6 @@
     "Kotlin/corrotinas/Corrotinas.md",
     "Kotlin/corrotinas/A Máquina de Estados das Corrotinas Kotlin.md",
     "Arquitetura/Arquitetura de Software.md",
-    "Kotlin/corrotinas",
     "Kotlin/images/DataClass.png",
     "Arquitetura/Paradigma Reativo.md"
   ]
