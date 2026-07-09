@@ -12,5 +12,50 @@ Abaixo, apresento os cinco padrões criacionais clássicos definidos pela litera
 1. **[[Singleton]]:** É usado quando você precisa garantir que existirá **apenas uma única instância** de uma classe em todo o sistema. Em Kotlin, isso é tão comum que a linguagem possui a palavra-chave `object` para criá-lo automaticamente.
 2. **[[Factory Method]]:** Este padrão define uma "receita" (interface) para criar um objeto, mas permite que as **subclasses decidam** qual classe específica será instanciada. Ele é útil quando sua classe principal não sabe exatamente qual tipo de objeto precisará criar no futuro.
 3. **[[Abstract Factory]]:** Imagine uma fábrica de fábricas. Ele fornece uma interface para criar **famílias de objetos relacionados** (como botões e barras de rolagem de um mesmo estilo visual) sem que o código precise conhecer as classes concretas de cada um.
-4. **Builder:** É ideal para criar **objetos complexos passo a passo**. Se um objeto precisa de muitos parâmetros para ser construído (alguns obrigatórios e outros opcionais), o Builder organiza esse processo de forma clara e flexível.
-5. **Prototype:** Em vez de criar um objeto do zero, o Prototype cria novos objetos **clonando (copiando) uma instância já existente**, chamada de protótipo. Isso é vantajoso quando a criação de um novo objeto é muito cara em termos de processamento ou memória.
+4. **[[Builder]]:** É ideal para criar **objetos complexos passo a passo**. Se um objeto precisa de muitos parâmetros para ser construído (alguns obrigatórios e outros opcionais), o Builder organiza esse processo de forma clara e flexível.
+5. **[[Prototype]]:** Em vez de criar um objeto do zero, o Prototype cria novos objetos **clonando (copiando) uma instância já existente**, chamada de protótipo. Isso é vantajoso quando a criação de um novo objeto é muito cara em termos de processamento ou memória.
+
+## Padrões de projeto estruturais
+
+Os **padrões de projeto estruturais** tratam da composição de classes ou objetos para formar estruturas maiores e mais complexas, visando simplificar as interações e relacionamentos entre as partes do sistema. Eles ajudam a garantir que, quando uma parte do sistema muda, a estrutura inteira não precise ser alterada.
+
+Abaixo, apresento um resumo introdutório dos principais padrões estruturais:
+
+1. **Adapter**
+- **O que é:** Funciona como um adaptador de tomada da vida real.
+- **Aplicação:** Ele converte a interface de uma classe em outra interface que o cliente espera, permitindo que classes com interfaces incompatíveis trabalhem juntas.
+- **Exemplo prático:** Adaptar um plugue de padrão americano para funcionar em uma tomada europeia no seu código.
+
+2. **Bridge**
+- **O que é:** Cria uma "ponte" entre uma abstração e sua implementação.
+- **Aplicação:** O objetivo é separar a interface do que ela faz (abstração) de como ela realmente funciona (implementação), permitindo que ambas variem de forma independente.
+- **Exemplo prático:** Ter uma hierarquia para tipos de janelas (lógica) e outra separada para como elas são desenhadas em diferentes sistemas como Windows ou Linux.
+
+3. **Composite**
+- **O que é:** Agrupa objetos em estruturas de árvore para representar hierarquias do tipo "parte-todo".
+- **Aplicação:** Ele permite que os clientes tratem objetos individuais e grupos de objetos de maneira uniforme.
+- **Exemplo prático:** Em um sistema gráfico, tratar um único "Círculo" e um "Grupo de Desenhos" (composto por vários círculos e quadrados) da mesma forma.
+
+4. **Decorator** 
+
+- **O que é:** Adiciona novas responsabilidades a um objeto de forma dinâmica.
+- **Aplicação:** É uma alternativa flexível ao uso de herança para estender funcionalidades, permitindo "embrulhar" um objeto com camadas extras de comportamento.
+- **Exemplo prático:** Adicionar bordas ou barras de rolagem a uma janela de texto apenas quando necessário.
+
+5. **Facade** 
+
+- **O que é:** Uma "cara" amigável para um sistema complexo.
+- **Aplicação:** Fornece uma interface única e simplificada para um conjunto de interfaces em um subsistema, escondendo a complexidade interna do desenvolvedor.
+- **Exemplo prático:** Uma única função `iniciarComputador()` que executa internamente tarefas complexas como checagem de CPU, memória e carregamento de drivers.
+
+6. **Flyweight**
+
+- **O que é:** Foca no compartilhamento para economizar recursos.
+- **Aplicação:** Usa o compartilhamento de objetos para suportar eficientemente grandes quantidades de objetos pequenos (ajuda a reduzir o uso de memória).
+- **Exemplo prático:** Em um editor de texto, em vez de criar um objeto para cada letra "A" em um livro, você cria apenas um objeto "A" e o compartilha em todas as posições onde ele aparece.
+
+7. **Proxy**
+
+- **O que é:** Um substituto ou representante de outro objeto.
+- **Aplicação:** Fornece um intermediário para controlar o acesso a um objeto original, podendo ser usado para carregamento preguiçoso (_lazy loading_), segurança ou controle de acesso remoto.
+- **Exemplo prático:** Um objeto Proxy que carrega uma imagem pesada da internet apenas no momento em que ela realmente precisa aparecer na tela.
