@@ -21,40 +21,40 @@ Os **padrões de projeto estruturais** tratam da composição de classes ou obje
 
 Abaixo, apresento um resumo introdutório dos principais padrões estruturais:
 
-1. **Adapter**
+1. **[[Adapter]]**
 - **O que é:** Funciona como um adaptador de tomada da vida real.
 - **Aplicação:** Ele converte a interface de uma classe em outra interface que o cliente espera, permitindo que classes com interfaces incompatíveis trabalhem juntas.
 - **Exemplo prático:** Adaptar um plugue de padrão americano para funcionar em uma tomada europeia no seu código.
 
-2. **Bridge**
+1. **[[Bridge]]**
 - **O que é:** Cria uma "ponte" entre uma abstração e sua implementação.
 - **Aplicação:** O objetivo é separar a interface do que ela faz (abstração) de como ela realmente funciona (implementação), permitindo que ambas variem de forma independente.
 - **Exemplo prático:** Ter uma hierarquia para tipos de janelas (lógica) e outra separada para como elas são desenhadas em diferentes sistemas como Windows ou Linux.
 
-3. **Composite**
+1. **[[Composite]]**
 - **O que é:** Agrupa objetos em estruturas de árvore para representar hierarquias do tipo "parte-todo".
 - **Aplicação:** Ele permite que os clientes tratem objetos individuais e grupos de objetos de maneira uniforme.
 - **Exemplo prático:** Em um sistema gráfico, tratar um único "Círculo" e um "Grupo de Desenhos" (composto por vários círculos e quadrados) da mesma forma.
 
-4. **Decorator** 
+1. **[[Decorator]]** 
 
 - **O que é:** Adiciona novas responsabilidades a um objeto de forma dinâmica.
 - **Aplicação:** É uma alternativa flexível ao uso de herança para estender funcionalidades, permitindo "embrulhar" um objeto com camadas extras de comportamento.
 - **Exemplo prático:** Adicionar bordas ou barras de rolagem a uma janela de texto apenas quando necessário.
 
-5. **Facade** 
+1. **[[Facade]]** 
 
 - **O que é:** Uma "cara" amigável para um sistema complexo.
 - **Aplicação:** Fornece uma interface única e simplificada para um conjunto de interfaces em um subsistema, escondendo a complexidade interna do desenvolvedor.
 - **Exemplo prático:** Uma única função `iniciarComputador()` que executa internamente tarefas complexas como checagem de CPU, memória e carregamento de drivers.
 
-6. **Flyweight**
+1. **[[Flyweight]]**
 
 - **O que é:** Foca no compartilhamento para economizar recursos.
 - **Aplicação:** Usa o compartilhamento de objetos para suportar eficientemente grandes quantidades de objetos pequenos (ajuda a reduzir o uso de memória).
 - **Exemplo prático:** Em um editor de texto, em vez de criar um objeto para cada letra "A" em um livro, você cria apenas um objeto "A" e o compartilha em todas as posições onde ele aparece.
 
-7. **Proxy**
+1. **[[Proxy]]**
 
 - **O que é:** Um substituto ou representante de outro objeto.
 - **Aplicação:** Fornece um intermediário para controlar o acesso a um objeto original, podendo ser usado para carregamento preguiçoso (_lazy loading_), segurança ou controle de acesso remoto.

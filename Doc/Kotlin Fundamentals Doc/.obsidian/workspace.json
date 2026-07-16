@@ -97,16 +97,86 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Práticas de desenvolvimento guiado/Apresentação Desenvolvimento com IA segura.md",
+                "file": "Arquitetura/DesignPatterns/Design Patterns.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Apresentação Desenvolvimento com IA segura"
+              "title": "Design Patterns"
+            }
+          },
+          {
+            "id": "8c5da8a32f8505fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arquitetura/DesignPatterns/Design Patterns.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Design Patterns"
+            }
+          },
+          {
+            "id": "e27f081843923ae8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arquitetura/DesignPatterns/Design Patterns.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Design Patterns"
+            }
+          },
+          {
+            "id": "9dc9a91486975b86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Proxy.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Proxy"
+            }
+          },
+          {
+            "id": "1c9850950268c261",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arquitetura/DesignPatterns/Estruturais/Flyweight.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Flyweight"
+            }
+          },
+          {
+            "id": "22666d3fba084cb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arquitetura/DesignPatterns/Estruturais/Decorator.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Decorator"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -163,7 +233,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 377.5004348754883
+    "width": 364.5
   },
   "right": {
     "id": "e691db328802178d",
@@ -268,14 +338,25 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "303417341ac9aa27",
+  "active": "e27f081843923ae8",
   "lastOpenFiles": [
+    "Proxy.md",
     "Arquitetura/DesignPatterns/Design Patterns.md",
+    "Arquitetura/DesignPatterns/Estruturais/Flyweight.md",
+    "Arquitetura/DesignPatterns/Estruturais/Facade.md",
+    "Arquitetura/DesignPatterns/Estruturais/Decorator.md",
+    "Arquitetura/DesignPatterns/Estruturais/Composite.md",
+    "Arquitetura/DesignPatterns/Estruturais/Bridge.md",
+    "Arquitetura/DesignPatterns/Estruturais/Adapter.md",
+    "Arquitetura/DesignPatterns/Criacionais/Abstract Factory.md",
+    "Arquitetura/DesignPatterns/Estruturais",
+    "Arquitetura/DesignPatterns/Criacionais",
+    "Práticas de desenvolvimento guiado/Apresentação Desenvolvimento com IA segura.md",
     "Práticas de desenvolvimento guiado/Apresentações/The_Dynamic_AI_Blueprint.pptx",
     "Práticas de desenvolvimento guiado/Apresentações/The_Dynamic_AI_Blueprint.pdf",
     "Práticas de desenvolvimento guiado/imagens/Desenvolvimento_Blindado__Qualidade_e_IA.png",
-    "Arquitetura/DesignPatterns/Prototype.md",
-    "Arquitetura/DesignPatterns/Builder.md",
+    "Arquitetura/DesignPatterns/Criacionais/Prototype.md",
+    "Arquitetura/DesignPatterns/Criacionais/Builder.md",
     "Práticas de desenvolvimento guiado/imagens/Desenvolvimento_de_Software_com_IA_2.png",
     "Práticas de desenvolvimento guiado/Apresentações/Precision_AI_Engineering.pptx",
     "Práticas de desenvolvimento guiado/Apresentações/Precision_AI_Engineering.pdf",
@@ -286,28 +367,18 @@
     "Práticas de desenvolvimento guiado/Apresentações/The_Armored_Assembly_Line.pdf",
     "Práticas de desenvolvimento guiado/Apresentações",
     "Práticas de desenvolvimento guiado/Sem título.md",
-    "Práticas de desenvolvimento guiado/Apresentação Desenvolvimento com IA segura.md",
     "Kotlin/Data Class.md",
     "Práticas de desenvolvimento guiado/imagens/Desenvolvimento_Seguro_com_IA.png",
     "Práticas de desenvolvimento guiado/imagens",
     "Práticas de desenvolvimento guiado/Testes de Mutação.md",
     "Práticas de desenvolvimento guiado/TDD.md",
     "Práticas de desenvolvimento guiado/BDD.md",
-    "Práticas de desenvolvimento guiado",
-    "Arquitetura/DesignPatterns/Singleton.md",
-    "Arquitetura/DesignPatterns/Abstract Factory.md",
-    "Arquitetura/DesignPatterns/Factory Method.md",
-    "Arquitetura/DesignPatterns",
+    "Arquitetura/DesignPatterns/Criacionais/Singleton.md",
+    "Arquitetura/DesignPatterns/Criacionais/Factory Method.md",
     "Kotlin/Funções de Escopo.md",
     "Kotlin/Tipos de funções.md",
     "Kotlin/corrotinas/SupervisorJob.md",
     "Kotlin/corrotinas/Operadores do Flow.md",
-    "Kotlin/corrotinas/Job.md",
-    "Kotlin/corrotinas/Fluxos de dados.md",
-    "Kotlin/corrotinas/Corrotinas.md",
-    "Kotlin/corrotinas/A Máquina de Estados das Corrotinas Kotlin.md",
-    "Arquitetura/Arquitetura de Software.md",
-    "Kotlin/images/DataClass.png",
-    "Arquitetura/Paradigma Reativo.md"
+    "Kotlin/images/DataClass.png"
   ]
 }
