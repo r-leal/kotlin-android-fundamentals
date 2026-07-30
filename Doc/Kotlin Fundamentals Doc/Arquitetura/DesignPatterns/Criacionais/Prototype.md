@@ -30,7 +30,8 @@ val soldadoRecruta = soldadoMestre.clonar() // Xerox do mestre!
 
 ---
 
-O "Jeito Kotlin" (Data Classes e o método `copy`)
+
+## O "Jeito Kotlin" (Data Classes e o método `copy`)
 
 Assim como no Builder, o Kotlin é tão moderno que ele já traz o padrão Prototype "dentro da caixa" através das **Data Classes**. Você não precisa criar um método `clonar()` manualmente; o Kotlin cria o método **copy()** para você automaticamente.
 

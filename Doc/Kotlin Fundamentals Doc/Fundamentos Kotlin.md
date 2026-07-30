@@ -10,5 +10,6 @@
 ### Funções especiais 
 - [[Tipos de funções]]
 ### Arquitetura
-[[Arquitetura de Software]]
+- [[Arquitetura de Software]]
+- [[Design Patterns]]
 
